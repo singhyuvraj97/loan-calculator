@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./st.css" />
+  </head>
+  <body>
+    <main class="card">
+      <section class="cardTop">
+        <form>
+          <h2 class="cardHead">Loan Calculator</h2>
+          <ul>
+            <li class="cardList">
+              <div class="cardIconCont">
+                <img class="cardIcons" src="./dollar-symbol.png" />
+              </div>
+              <div class="cardInputCont">
+                <input class="cardUserInput" type="text" placeholder="Loan Amount" />
+              </div>
+            </li>
+            <li class="cardList">
+              <div class="cardIconCont">
+                <img class="cardIcons" src="./discount.png" />
+              </div>
+              <div class="cardInputCont">
+                <input class="cardUserInput" type="number" placeholder="Interest" max="100" min="0" />
+              </div>
+            </li>
+            <li class="cardList">
+              <div class="cardInputCont">
+                <input class="cardUserInput" type="number" placeholder="Years To Repay" />
+              </div>
+            </li>
+            <li class="cardList">
+              <div class="cardInputCont ">
+                <input class="cardBtn" type="submit" value="Calculate" />
+              </div>
+            </li>
+          </ul>
+        </form>
+      </section>
+      <section class="cardBottom">
+        <form>
+          <h4 class="cardHead">Results</h4>
+          <ul>
+            <li class="cardList">
+              <p>monthly payment</p>
+              <div class="cardInputCont">
+                <input class="inputRes inputResHide" type="text" readonly/>
+              </div>
+            </li>
+            <li class="cardList">
+              <p>total payment</p>
+              <div class="cardInputCont">
+                <input class="inputRes inputResHide" type="text" readonly/>
+              </div>
+            </li>
+            <li class="cardList">
+              <p>total interest</p>
+              <div class="cardInputCont">
+                <input class="inputRes inputResHide" type="text" readonly/>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
