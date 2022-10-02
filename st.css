@@ -56,6 +56,10 @@ body{
   padding: var(--card-input-padding);
 }
 
+.cardUserInput{
+  -moz-appearance: textfield;
+}
+
 .cardBtn{
   background-color: var(--card-btn-bg-color);
   padding: var(--card-input-padding);
